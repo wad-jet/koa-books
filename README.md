@@ -10,8 +10,10 @@
 # Filtering
 
 Example:
+```
 POST http://localhost:3000/books/filter?offset=0&limit=15&sort=date asc, title asc
 application/json
 {
     "description": "%программ%"
 }
+```
