@@ -1,7 +1,7 @@
 const BaseService = require('./base.service');
-class AuthorsService extends BaseService {   
-    getTableName() { 
-        return 'authors'; 
-    };
+class AuthorsService extends BaseService {
+    constructor(settings) {
+        super(settings, 'authors');
+    }
 }
 module.exports = AuthorsService;
